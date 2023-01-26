@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'futura', 'arial', 'sans-serif';
+}
+
+body {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.day > img {
+    height: 10vh;
+}
+
+.day {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-left > img {
+    float: left;
+    height: 20vh
+}
+
+.header-title {
+    padding-left: 20px;
+    text-align: start;
+    float: left;
+    width: 100%;
+}
+
+section {
+    padding: 15px 15px 15px 0px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 2px solid black;
+    align-items: center;
+}
+
+.info-left {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 52vw;
+    min-width: 20vw;
+}
+
+header {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+header > img {
+    width: 50px;
+    float: left;
+}
+
+article > div {
+    border: 3px solid black;
+    padding: 10px;
+    height: auto;
+}
+
+.article,
+.subtitle {
+    text-align: center;
+}
+
+.info-temperature {
+    float: left;
+    font-size: 5em;
+    padding-left: 2vw;
+    padding-top: 1vh;
+}
+
+.info-unite {
+    float: left;
+    padding-top: 2vh;
+}
+
+.info-right {
+    float: right;
+    min-width: 20vw;
+    clear: none;
+    text-align: left;
+    line-height: 2em;
+    line-height: 5ch;
+}
+
+main {
+    float: left;
+    width: 100vw;
+    clear: both;
+}
+
+.day-title,
+.icon,
+.temperature,
+.pollen {
+    width: 25vw;
+}
+
+.day-title,
+.info-temperature,
+.temperature-day {
+    font-weight: 700;
+}
+
+/*  tablet & mobile UI  */
+
+@media screen and (min-width: 1000px) {
+    .section {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .day-title,
+    .icon,
+    .temperature,
+    .pollen {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .day-title {
+        font-size: .8em;
+        padding-bottom: 10px;
+    }
+
+    .temperature {
+        font-size: 1em;
+    }
+
+    .temperature {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: .9em;
+    }
+
+    .pollen {
+        font-size: .9em;
+    }
+
+    .day {
+        width: 14vw;
+        float: left;
+        padding: 10px;
+    }
+
+    /* pre {
+        margin-left: 35%;
+    }     */
+}
+
+
+/*  mobile UI  */
+
+/* @media screen and (max-width: 500px) {
+    .section {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .day-title,
+    .icon,
+    .temperature,
+    .pollen {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .day-title {
+        font-size: .8em;
+        padding-bottom: 10px;
+    }
+
+    .temperature {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: .9em;
+    }
+
+    .day {
+        width: 14vw;
+        float: left;
+        padding: 10px;
+    }
+
+    pre {
+        margin-left: 35%;
+    }
+} */
